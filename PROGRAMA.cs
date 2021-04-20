@@ -1,4 +1,3 @@
-using Internal;
 using System;
 
 namespace PROJECT_SERIES_CARLOS_
@@ -38,14 +37,14 @@ namespace PROJECT_SERIES_CARLOS_
                    }
                    opcaoUsuario = ObterOpcaoUsuario();
                }
-               Console.WriteLine("Obrigado por utilizar nossos serviços.");
+               Console.WriteLine("Obrigado por utilizar nossos serviÃ§os.");
                Console.ReadLine();
 
             
         }
         private static void ExcluirSerie()
         {
-            Console.Write("Digite o id da série: ");
+            Console.Write("Digite o id da sÃ©rie: ");
             int indiceSerie = int.Parse(Console.ReadLine());
             int.Parse(Console.ReadLine());
 
@@ -54,7 +53,7 @@ namespace PROJECT_SERIES_CARLOS_
         }
         private static void AtualizarSerie()
         {
-            Console.Write("Digite o id da série: ");
+            Console.Write("Digite o id da sÃ©rie: ");
             int indiceSerie = int.Parse(Console.ReadLine());
             // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.
             //https//docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view =netcore-3.
@@ -62,17 +61,17 @@ namespace PROJECT_SERIES_CARLOS_
             {
                 Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
             }
-            Console.Write("Digite o gênero entre a opções acima:");
+            Console.Write("Digite o gÄ™nero entre a opÃ§Å‘es acima:");
             int entradaGenero = int.Parse(Console.ReadLine());
             
             Console.Write("Digite o titulo da serie:");
             string entradaTitulo = Console.ReadLine();
 
-             Console.Write("Digite o Ano de Início da Série: ");
+             Console.Write("Digite o Ano de InÃ­cio da SÃ©rie: ");
              int entradaAno = int.Parse(Console.ReadLine());
 
-             Console.Write("Digite a Descrição da Série:");
-             string entradaDescrição = Console.ReadLine()
+             Console.Write("Digite a DescriÃ§Äƒo da SÃ©rie:");
+             string entradaDescriÃ§Äƒo = Console.ReadLine()
              serie novaSerie = new serie(id: repositorio.ProximoId()),
 
              (Genero)entradaGenero,
@@ -98,10 +97,10 @@ namespace PROJECT_SERIES_CARLOS_
 
             Console.Write("Informe a opcao desejada:");
 
-            Console.WriteLine("1- Listar séries");
+            Console.WriteLine("1- Listar sÃ©ries");
             Console.Writeline("2- Inserir nova serie");
             Console.Writeline("3- Atualizar serie");
-            Console.Writeline("5- Visualizar série");
+            Console.Writeline("5- Visualizar sÃ©rie");
             Console.WriteLine("C Limpar Tela");
             Console.WriteLine("X- sair");
             Console.WriteLine();
